@@ -82,7 +82,7 @@ export const menuItems = [
   //     },
   //   ],
   // },
-    id: 2,
+    id: 1,
     title: 'Connect',
     items: [
       {

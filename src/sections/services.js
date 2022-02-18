@@ -11,21 +11,15 @@ import org from 'assets/images/icons/org.png';
 const data = [
   {
     id: 1,
-    icon: individual,
-    title: 'For Individuals',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    icon: team,
+    title: 'For Creators',
+    description: `Monetise your social media audience by finding the right brands to partner with.`,
   },
   {
     id: 2,
-    icon: team,
-    title: 'For Team',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
-  },
-  {
-    id: 3,
     icon: org,
-    title: 'For Organization',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    title: 'For Brands',
+    description: `Find the right social media creators for your business campaign and create a high ROI partnership.`,
   },
 ];
 
@@ -35,8 +29,8 @@ const Services = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Successful business start with great feature"
-          description="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
+          title="We believe in meaningful partnerships"
+          description="At SponSure, we help both, brands as well as creators, derive maximum value from each other."
         />
         <Box sx={styles.features}>
           {data?.map((item) => (
@@ -72,7 +66,7 @@ const styles = {
       'repeat(1, 1fr)',
       'repeat(1, 1fr)',
       'repeat(2, 1fr)',
-      'repeat(3, 1fr)',
+      'repeat(2, 1fr)',
     ],
     '.feature-item': {
       display: ['block', 'block', 'flex', 'flex', 'block', 'flex'],

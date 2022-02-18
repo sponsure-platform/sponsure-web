@@ -15,7 +15,7 @@ export default function Layout({ children }) {
       >
         {children}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 }

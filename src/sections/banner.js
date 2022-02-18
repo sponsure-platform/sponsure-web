@@ -21,10 +21,10 @@ const Banner = () => {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.content}>
             <Heading as="h1">
-            One-stop sponsorship marketplace solution brands & influencers.
+            Grow your online presence through influencer marketing
             </Heading>
             <Text as="p">
-            Join us on our mission today!
+            Are you an influencer or a brand? Sign in for early access. We’ll ensure you’re the first one to know when we launch!
             </Text>
             <Box sx={styles.subscribe}>
               <Label htmlFor="email" variant="styles.srOnly">
@@ -33,9 +33,9 @@ const Banner = () => {
               <Input
                 id="email"
                 type="email"
-                placeholder="Enter Email address"
+                placeholder="Email"
               />
-              <Button variant="primary">Subscribe</Button>
+              <Button variant="primary">Get Early Access</Button>
             </Box>
           </Box>
           <Box as="figure" sx={styles.illustration}>
@@ -80,14 +80,14 @@ const styles = {
   subscribe: {
     display: 'flex',
     alignItems: 'center',
-    mt: ['30px'],
+    mt: ['40px'],
     input: {
       mr: ['15px'],
       minHeight: ['45px', null, null, 60, 50, null, 60],
     },
     button: {
       minHeight: ['45px', null, null, 60, 50, null, 60],
-      fontSize: ['14px', '14px', '16px'],
+      fontSize: ['12px', '12px', '12px'],
     },
   },
   sponsoredBy: {

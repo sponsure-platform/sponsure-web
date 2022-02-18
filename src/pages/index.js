@@ -18,7 +18,7 @@ export default function IndexPage() {
       <Layout>
         <SEO
           title="SponSure | Early Access"
-          description="Sponsorship Marketplace for Influencers"
+          description="Sponsorship Marketplace for Brands and Influencers"
         />
         <Banner />
         <Services />
@@ -27,7 +27,7 @@ export default function IndexPage() {
         {/* <UltimateFeatures />
         <HappyCustomer />
         <Blog /> */}
-        <SubscribeUs />
+        {/* <SubscribeUs /> */}
       </Layout>
     </ThemeProvider>
   );

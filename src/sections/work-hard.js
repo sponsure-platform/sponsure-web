@@ -10,27 +10,19 @@ import check from 'assets/images/icons/check-circle.png';
 const data = [
   {
     id: 1,
-    label: 'Medical and vision',
+    label: 'Influencer & brand access',
   },
   {
     id: 2,
-    label: 'Life insurance',
+    label: 'Niche-based matchmaking',
   },
   {
     id: 3,
-    label: '400(k) savings',
+    label: 'Negotiations and deal closure',
   },
   {
     id: 4,
-    label: 'HSAs and FSAs',
-  },
-  {
-    id: 5,
-    label: 'Commuter benefits',
-  },
-  {
-    id: 6,
-    label: '529 college savings',
+    label: 'Free for early adopters!',
   },
 ];
 
@@ -43,8 +35,8 @@ const WorkHard = () => {
             <SectionHeading
               emoji={emoji}
               sx={styles.heading}
-              title="Don’t work hard, be smart &amp; work smartly. Take a relax sit"
-              description="Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever."
+              title="You can leave all your worries to us! Sit back, relax!"
+              description="With an ever-growing community of influencers and brands, we aim to solve your influencer marketing goals end-to-end. Our platform helps with:"
             />
             <Box sx={styles.features}>
               {data?.map(({ id, label }) => (

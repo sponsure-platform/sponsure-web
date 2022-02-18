@@ -35,8 +35,9 @@ const styles = {
       listStyle: 'none',
       margin: '28px 0 0',
       padding: 0,
+      display: 'inline',
       li: {
-        display: 'flex',
+        display: 'inline',
         alignItems: 'center',
         img: {
           mr: '15px',

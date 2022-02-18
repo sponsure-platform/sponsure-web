@@ -16,14 +16,6 @@ export default function Footer() {
             <Box sx={styles.logo}>
               <Logo />
             </Box>
-            {/* <Box sx={styles.terms}>
-              <Link path="#!">Terms of use</Link>
-              <Text as="span">|</Text>
-              <Link path="#!">Privacy</Link>
-            </Box>
-            <Text as="p" sx={styles.copyright}>
-              Copyright by {new Date().getFullYear()} RedQ, Inc
-            </Text> */}
           </Box>
           {menuItems.map(({ id, title, items }) => (
             <FooterWidget key={id} title={title} items={items} />
