@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Container, Image, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
-import { LearnMore } from 'components/link';
+// import { LearnMore } from 'components/link';
 import workHard from 'assets/images/work-hard.png';
 import emoji from 'assets/images/icons/emoji.png';
 import check from 'assets/images/icons/check-circle.png';
@@ -54,9 +54,9 @@ const WorkHard = () => {
                 </Flex>
               ))}
             </Box>
-            <Box sx={styles.learnMore}>
+            {/* <Box sx={styles.learnMore}>
               <LearnMore label="Explore more" path="#!" />
-            </Box>
+            </Box> */}
           </Box>
           <Box sx={styles.illustration}>
             <Image src={workHard} alt="workHard" />

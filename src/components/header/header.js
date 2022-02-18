@@ -17,7 +17,7 @@ export default function Header() {
             <Container>
               <Box sx={styles.headerInner}>
                 <Logo sx={styles.logo} />
-                {/* <Flex as="nav" sx={styles.navbar} className="navbar">
+                <Flex as="nav" sx={styles.navbar} className="navbar">
                   <Box as="ul" sx={styles.navList}>
                     {menuItems.map(({ path, label }, i) => (
                       <li key={i}>
@@ -28,7 +28,7 @@ export default function Header() {
                   <Button variant="text" sx={styles.getStartedDesktop}>
                     Get Started
                   </Button>
-                </Flex> */}
+                </Flex>
                 <Button variant="text" sx={styles.getStartedMobile}>
                   Get Started
                 </Button>
