@@ -101,12 +101,12 @@ const styles = {
   },
   wrapper: {
     height: '100%',
-    paddingTop: 30,
+    // paddingTop: 30,
     width: '100%',
   },
   logo: {
     ml: 30,
-    mb: 45,
+    // mb: 45,
   },
   navbar: {
     listStyle: 'none',
