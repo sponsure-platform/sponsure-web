@@ -37,7 +37,7 @@ const styles = {
       padding: 0,
       display: 'inline',
       li: {
-        display: 'inline',
+        display: 'flex',
         alignItems: 'center',
         img: {
           mr: '15px',
