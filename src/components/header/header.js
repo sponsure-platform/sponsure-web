@@ -2,21 +2,22 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Flex, Button } from 'theme-ui';
 import Sticky from 'react-stickynode';
-import Logo from 'components/logo';
+// import Logo from 'components/logo';
 import { NavLink } from 'components/link';
 import { DrawerProvider } from 'contexts/drawer/drawer-provider';
 import DrawerNav from './drawer-nav';
 import menuItems from './header.data';
+import Logo from '../../assets/logos/sponsure_logo.svg';
 
 export default function Header() {
   return (
     <DrawerProvider>
       <Box sx={styles.headerWrapper}>
-        <Sticky enabled={true} top={0} activeClass="is-sticky" innerZ={10}>
+        <Sticky as="sticky" enabled={true} top={0} activeClass="is-sticky" innerZ={10}>
           <Box as="header" variant="layout.header">
-            <Container>
               <Box sx={styles.headerInner}>
-                <Logo sx={styles.logo} />
+                {/* <Logo sx={styles.logo} /> */}
+                <img as sx={styles.logo} src={Logo} alt={'sponsure logo'} />
                 <Flex as="nav" sx={styles.navbar} className="navbar">
                   <Box as="ul" sx={styles.navList}>
                     {menuItems.map(({ path, label }, i) => (
@@ -34,7 +35,6 @@ export default function Header() {
                 </Button>
                 <DrawerNav />
               </Box>
-            </Container>
           </Box>
         </Sticky>
       </Box>
@@ -48,7 +48,6 @@ const styles = {
       position: 'fixed',
       left: 0,
       right: 0,
-      py: 20,
       transition: 'all 0.3s ease-in-out 0s',
       '&.is-mobile-menu': {
         backgroundColor: 'white',
@@ -58,7 +57,6 @@ const styles = {
       header: {
         backgroundColor: 'white',
         boxShadow: '0 6px 13px rgba(38,78,118,0.1)',
-        py: 13,
       },
     },
   },
@@ -66,6 +64,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    // p: [10,20,10,20],
     '@media only screen and (max-width: 768px)': {
       '.navbar': {
         position: 'absolute',
@@ -98,6 +97,11 @@ const styles = {
   },
   logo: {
     mr: [null, null, null, null, 50],
+    ml: [null, null, null, null, 30],
+    width: '180px',
+    float: 'left'
+    // height: '100px'
+    // p: 10
   },
   navbar: {
     alignItems: 'center',

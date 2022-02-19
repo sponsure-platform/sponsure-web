@@ -51,23 +51,25 @@ export default Banner;
 
 const styles = {
   contentWrapper: {
+    // mt: [null, null, null, null, null, 100],
     display: ['block', null, null, null, 'grid', 'flex'],
     gridTemplateColumns: ['1fr 1fr', null, null, null, '0.9fr 1.1fr'],
     gap: [0, 0, 0, 0, 40],
     alignItems: 'center',
     minHeight: [null, null, '100vh', '70vh', '50vh', '100vh'],
-    pt: ['100px', null, null, '130px', '25px', null, 0],
-    textAlign: ['center', null, 'left'],
+    pt: [null, 100, 100, 80, 90, null],
+    textAlign: ['center', 'center','center','center','center', 'left'],
   },
   content: {
-    maxWidth: [null, null, null, '75%', '100%'],
+    maxWidth: [null, null, null,'85%' ,'85%', '70%'],
+    minWidth: [null, null, null,'85%' ,'75%', '55%'],
     margin: [null, null, null, '0 auto', 0],
     textAlign: [null, null, null, 'center', 'left'],
     h1: {
       color: 'textSecondary',
       fontFamily: 'Crimson Text, Serif',
       fontWeight: 600,
-      fontSize: ['34px', '34px', '34px', '44px', '40px', '49px', '62px'],
+      fontSize: ['34px', '34px', '34px', '36px', '36px', '44px'],
       lineHeight: [1.26, 1.26, 1.11, 1.4, 1.11],
     },
     p: {
@@ -90,35 +92,15 @@ const styles = {
       fontSize: ['12px', '12px', '12px'],
     },
   },
-  sponsoredBy: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: ['center', null, null, null, 'unset'],
-    mt: ['30px', '30px', '40px', '40px', '30px'],
-    span: {
-      color: rgba('#566272', 0.6),
-      fontSize: ['14px', '16px', '16px'],
-    },
-  },
-  logos: {
-    display: 'flex',
-    alignItems: 'center',
-    figure: {
-      ml: ['10px', '16px', '28px', '16px', '16px'],
-    },
-    img: {
-      maxWidth: ['69px', '85px', '100%', '100%', '79px', '100px', '100%'],
-    },
-  },
   illustration: {
-    ml: [0, 0, '30px', 0, 0],
+    ml: [0, 0, '30px', 0, 0,0],
     mt: ['50px', null, null, null, 0],
-    minWidth: ['auto', null, null, null, null, '600px'],
+    minWidth: ['auto', null, null, null, null, '50%'],
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     img: {
-      maxWidth: ['100%', null, null, '80%', '100%'],
+      minWidth: ['100%', null, null, '80%', '100%','100%'],
     },
   },
 };

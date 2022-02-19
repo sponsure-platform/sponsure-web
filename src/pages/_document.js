@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-
+import logoS from '../assets/logos/SponSure_S.png';
 class CustomDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -10,6 +10,7 @@ class CustomDocument extends Document {
     return (
       <Html lang="en-US">
         <Head>
+          <link rel="shortcut icon" href={logoS} />
           <link
             rel="stylesheet"
             crossOrigin="anonymous"

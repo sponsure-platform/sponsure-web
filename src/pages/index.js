@@ -29,6 +29,7 @@ export default function IndexPage() {
         <Blog /> */}
         {/* <SubscribeUs /> */}
       </Layout>
-    </ThemeProvider>
+
+  </ThemeProvider>
   );
 }

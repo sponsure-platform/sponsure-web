@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import SponsureLogo from 'assets/images/sponsure_logo.svg';
+import SponsureLogo from 'assets/logos/sponsure_logo.svg';
 
 const Logo = () => {
   return (
-    <Image src={SponsureLogo} sizes="50vw" width={185.92} height={36.62} />
+    <Image src={SponsureLogo} width={100} height={100} />
   );
 };
 
