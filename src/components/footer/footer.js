@@ -9,7 +9,7 @@ import Logo from '../../assets/logos/sponsure_logo.svg';
 
 export default function Footer() {
   return (
-        <Box sx={styles.footerTopInner}>
+        <Box sx={styles.footerTopInner} id="contact">
           <Box sx={styles.footerInner}>
               <img src={Logo} alt='sponsure logo' />
               <div sx={styles.foooterRightHalf} >

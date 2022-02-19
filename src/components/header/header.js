@@ -26,13 +26,7 @@ export default function Header() {
                       </li>
                     ))}
                   </Box>
-                  <Button variant="text" sx={styles.getStartedDesktop}>
-                    Get Started
-                  </Button>
                 </Flex>
-                <Button variant="text" sx={styles.getStartedMobile}>
-                  Get Started
-                </Button>
                 <DrawerNav />
               </Box>
           </Box>
@@ -99,27 +93,30 @@ const styles = {
     mr: [null, null, null, null, 50],
     ml: [null, null, null, null, 30],
     width: '180px',
-    float: 'left'
+    float: 'left',
     // height: '100px'
     // p: 10
   },
   navbar: {
+    width: '100%',
     alignItems: 'center',
-    flexGrow: 1,
+    justifyContent: 'end',
+    // flexGrow: 1
   },
   navList: {
     display: ['flex'],
     listStyle: 'none',
-    flexGrow: 1,
+    // flexGrow: 1,
     p: 0,
     'li:last-child': {
       ml: ['auto'],
+      mr: [0,0,0,10,10,10]
     },
     '.nav-item': {
       cursor: 'pointer',
       fontWeight: 400,
       padding: 0,
-      margin: [0, 0, 0, 0, '0 20px'],
+      margin: [0, 0, 0, 0, '0 15px'],
     },
     '.active': {
       color: 'primary',

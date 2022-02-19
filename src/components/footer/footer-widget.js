@@ -12,7 +12,7 @@ const FooterWidget = ({ title, items }) => {
         {items.map(({ path, label, icon }, i) => (
           <li key={i}>
             {icon && <Image src={icon} alt={label} />}
-            <Link path={path} key={i} label={label} variant="footer" />
+            <a href={path} key={i} label={label} variant="footer" target="_blank">{label}</a>
           </li>
         ))}
       </ul>
