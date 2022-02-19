@@ -57,7 +57,7 @@ const styles = {
     gap: [0, 0, 0, 0, 40],
     alignItems: 'center',
     minHeight: [null, null, '100vh', '70vh', '50vh', '100vh'],
-    pt: [null, 100, 100, 80, 90, null],
+    pt: [100, 100, 100, 80, 90, null],
     textAlign: ['center', 'center','center','center','center', 'left'],
   },
   content: {

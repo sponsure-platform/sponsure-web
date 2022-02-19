@@ -35,7 +35,7 @@ const styles = {
     justifyContent: 'space-between',
     // flex:1,
     img: {
-      maxWidth: ['100px','150px','250px','250px','250px', '250px'],
+      maxWidth: ['150px','150px','250px','250px','250px', '250px'],
     },
   },
   foooterRightHalf: {
@@ -43,7 +43,7 @@ const styles = {
   },
   copyright: {
     color: rgba('#0F2137', 0.8),
-    fontSize: ['16px'],
+    fontSize: ['11px','11px','12px','14px','16px','16px'],
     mt: [30],
     textAlign: ['center', 'center', 'center', 'center', 'center', 'center'],
   },
